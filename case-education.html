@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UAE Higher Education Analytics Programme: Case Study · Sami Mawass</title>
+  <title>UAE Higher Education Analytics Program: Case Study · Sami Mawass</title>
 
   <!-- SEO -->
   <meta name="description" content="Case study: a five-dashboard SQL to SSAS Tabular to Power BI analytics programme for a UAE higher-education institution of roughly 25,700 students, with production RLS and a tabular-model optimization that cut dataset refresh by around 80 percent.">
@@ -12,14 +12,14 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="UAE Higher Education Analytics Programme: Case Study · Sami Mawass">
+  <meta property="og:title" content="UAE Higher Education Analytics Program: Case Study · Sami Mawass">
   <meta property="og:description" content="Five production dashboards on a SQL to SSAS Tabular to Power BI stack for a UAE higher-education institution. Dataset refresh cut from roughly 30 minutes to about 6.">
   <meta property="og:url" content="https://sami-mawass.github.io/sami-mawass/case-education.html">
   <meta property="og:image" content="https://sami-mawass.github.io/sami-mawass/assets/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="UAE Higher Education Analytics Programme: Case Study · Sami Mawass">
+  <meta name="twitter:title" content="UAE Higher Education Analytics Program: Case Study · Sami Mawass">
   <meta name="twitter:description" content="Five production dashboards on a SQL to SSAS Tabular to Power BI stack for a UAE higher-education institution. Dataset refresh cut from roughly 30 minutes to about 6.">
   <meta name="twitter:image" content="https://sami-mawass.github.io/sami-mawass/assets/og-image.png">
 
@@ -38,7 +38,7 @@
     "@graph": [
       {
         "@type": "CreativeWork",
-        "headline": "UAE Higher Education Analytics Programme",
+        "headline": "UAE Higher Education Analytics Program",
         "description": "Case study: a five-dashboard SQL to SSAS Tabular to Power BI analytics programme for a UAE higher-education institution of roughly 25,700 students, with production RLS and a tabular-model optimization that cut dataset refresh by around 80 percent.",
         "url": "https://sami-mawass.github.io/sami-mawass/case-education.html",
         "author": {
@@ -53,7 +53,7 @@
         "itemListElement": [
           {"@type": "ListItem", "position": 1, "name": "Home",           "item": "https://sami-mawass.github.io/sami-mawass/"},
           {"@type": "ListItem", "position": 2, "name": "Client Projects", "item": "https://sami-mawass.github.io/sami-mawass/client-projects.html"},
-          {"@type": "ListItem", "position": 3, "name": "UAE Higher Education Analytics Programme",  "item": "https://sami-mawass.github.io/sami-mawass/case-education.html"}
+          {"@type": "ListItem", "position": 3, "name": "UAE Higher Education Analytics Program",  "item": "https://sami-mawass.github.io/sami-mawass/case-education.html"}
         ]
       }
     ]
@@ -129,7 +129,7 @@
       Client Projects
     </a>
     <p class="eyebrow eyebrow--cyan">Case Study · Higher Education · UAE</p>
-    <h1 style="color:var(--n50);font-family:var(--head);font-weight:700;font-size:46px;letter-spacing:-1.8px;margin:0 0 16px;line-height:1.05;">UAE Higher Education<br>Analytics Programme</h1>
+    <h1 style="color:var(--n50);font-family:var(--head);font-weight:700;font-size:46px;letter-spacing:-1.8px;margin:0 0 16px;line-height:1.05;">UAE Higher Education<br>Analytics Program</h1>
     <p style="font-size:17px;color:var(--n50-a72);max-width:600px;margin:0 0 28px;line-height:1.6;">
       Five production dashboards for a UAE national higher-education institution of roughly 25,700 students, on a SQL Server to SSAS Tabular to Power BI Report Server stack with production row-level security. I contributed as a BI Developer within the delivery team. One key enhancement: optimizing a tabular model I joined mid-build, cutting dataset refresh from roughly 30 minutes to about 6.
     </p>
@@ -168,7 +168,7 @@
 <section class="sec sec--ink" aria-labelledby="problem-heading">
   <div class="wrap" style="max-width:800px;">
     <p class="case-label">Problem</p>
-    <h2 id="problem-heading">Opaque reporting with no semantic layer, and a 30-minute refresh.</h2>
+    <h2 id="problem-heading">Unclear reporting with no semantic layer, and a 30-minute refresh.</h2>
     <div class="case-prose" style="margin-top:24px;">
       <p>A national higher-education institution in the UAE was managing institutional planning through fragmented sources and manually produced reports. There was no unified semantic layer: each report carried its own logic, measure definitions drifted across files, and no documentation existed to help stakeholders verify what they were looking at.</p>
       <p>Dataset refresh took approximately 30 minutes, long enough that planning meetings often ran on stale figures. Row-level security was managed inconsistently, with no formal handoff to the internal team.</p>
@@ -184,7 +184,7 @@
     <h2 id="context-heading">On-premise stack, multi-role access, accreditation requirements.</h2>
     <div class="case-prose" style="margin-top:24px;">
       <p>The institution operated on an on-premise Microsoft stack: SQL Server as the source system, with Power BI Report Server for distribution. Reporting needed to serve multiple user roles: institutional planners, faculty leads, and executive stakeholders, each with different data access requirements.</p>
-      <p>Reports fed into accreditation workflows, where accuracy and consistency were non-negotiable. The solution needed to be auditable, maintainable, and owned by the internal team after handoff.</p>
+      <p>Reports fed into accreditation workflows, where accuracy and consistency were required. The solution needed to be auditable, maintainable, and owned by the internal team after handoff.</p>
     </div>
   </div>
 </section>
@@ -196,8 +196,8 @@
     <h2 id="approach-heading">Contribute, optimize, document, hand off.</h2>
     <div class="case-prose" style="margin-top:24px;">
       <ul>
-        <li><strong>SQL transformation layer:</strong> built and refined SQL views in SSMS to shape source data for the SSAS model, standardising grain and eliminating repeated logic at the source.</li>
-        <li><strong>SSAS Tabular enhancements:</strong> worked within the existing semantic model: added and refined DAX measures, standardised KPI naming, and implemented calculation groups for time intelligence.</li>
+        <li><strong>SQL transformation layer:</strong> built and refined SQL views in SSMS to shape source data for the SSAS model, standardizing grain and eliminating repeated logic at the source.</li>
+        <li><strong>SSAS Tabular enhancements:</strong> worked within the existing semantic model: added and refined DAX measures, standardized KPI naming, and implemented calculation groups for time intelligence.</li>
         <li><strong>Targeted model optimization:</strong> identified and resolved the partitioning and relationship patterns causing slow refresh, cutting dataset processing from approximately 30 minutes to approximately 6.</li>
         <li><strong>Production RLS:</strong> designed and implemented row-level security scoped to institutional hierarchy, with written documentation enabling the internal team to manage access going forward.</li>
         <li><strong>Power BI delivery:</strong> built reports in Power BI Report Server, connected live to the SSAS model, scoped to the agreed KPI set across the five dashboards.</li>
@@ -270,7 +270,7 @@
     </div>
 
     <div class="case-prose" style="margin-top:28px;">
-      <p>The SSAS Tabular model sits at the centre of the stack as the single source of truth, a pattern that maps directly to what a well-designed dbt project achieves in a modern data warehouse. The SQL transformation layer handles extraction and grain normalisation; the semantic model handles business logic; the reports handle presentation. Each layer has a single responsibility.</p>
+      <p>The SSAS Tabular model sits at the center of the stack as the single source of truth, a pattern that maps directly to what a well-designed dbt project achieves in a modern data warehouse. The SQL transformation layer handles extraction and grain normalization; the semantic model handles business logic; the reports handle presentation. Each layer has a single responsibility.</p>
     </div>
   </div>
 </section>
@@ -298,7 +298,7 @@
     <h2 id="skills-heading">The semantic layer is just the beginning.</h2>
     <div class="case-prose" style="margin-top:24px;">
       <p>SSAS Tabular is the semantic layer in this stack: the exact role a dbt project fills in a modern cloud architecture. The patterns are the same: a single place to define business logic, a shared measure library, version-controlled definitions, documented lineage. The tooling differs; the thinking doesn't.</p>
-      <p>This engagement confirmed that the biggest leverage in analytics isn't the report: it's the model underneath it. A well-designed semantic model with documented measures eliminates an entire class of trust problems downstream.</p>
+      <p>This engagement confirmed that the most important part of analytics isn't the report: it's the model underneath it. A well-designed semantic model with documented measures removes an entire class of trust problems downstream.</p>
     </div>
     <div class="case-skills">
       <span class="case-skill-chip">SSAS Tabular</span>
