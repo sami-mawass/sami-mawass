@@ -283,7 +283,7 @@ h4 { font-size: 15px; font-weight: 600; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 56px;
-  align-items: stretch;
+  align-items: center;
 }
 .hero-text .eyebrow { color: var(--muted); }
 .accent-bar {
@@ -333,15 +333,12 @@ h4 { font-size: 15px; font-weight: 600; }
   background: #081624;
   border: 1px solid rgba(80,230,255,.13);
   border-radius: var(--radius);
-  padding: 16px 18px 14px;
+  padding: 24px;
   position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  min-height: 100%;
-  align-self: stretch;
+  max-height: 320px;
   box-sizing: border-box;
 }
 .hero-chart-header {
