@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Manufacturing Analytics Suite — Case Study · Sami Mawass</title>
+  <title>Manufacturing Analytics Suite: Case Study · Sami Mawass</title>
 
   <!-- SEO -->
-  <meta name="description" content="Power BI manufacturing analytics suite for a Scotland FMCG manufacturer — OEE, downtime, production, waste, and financial workstreams. ~2 hrs/shift eliminated.">
+  <meta name="description" content="Power BI manufacturing analytics suite for a Scotland FMCG manufacturer: OEE, downtime, production, waste, and financial workstreams. ~2 hrs/shift eliminated.">
   <link rel="canonical" href="https://sami-mawass.github.io/sami-mawass/case-fmcg-suite.html">
   <link rel="icon" type="image/svg+xml" href="assets/logo-mark-light.svg">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Manufacturing Analytics Suite — Case Study · Sami Mawass">
-  <meta property="og:description" content="SQL-based Power BI analytics suite for a Scotland FMCG manufacturer — five reporting areas in four delivery workstreams, ~2 hrs/shift manual reporting eliminated.">
+  <meta property="og:title" content="Manufacturing Analytics Suite: Case Study · Sami Mawass">
+  <meta property="og:description" content="SQL-based Power BI analytics suite for a Scotland FMCG manufacturer: five reporting areas in four delivery workstreams, ~2 hrs/shift manual reporting eliminated.">
   <meta property="og:url" content="https://sami-mawass.github.io/sami-mawass/case-fmcg-suite.html">
   <meta property="og:image" content="https://sami-mawass.github.io/sami-mawass/assets/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Manufacturing Analytics Suite — Case Study · Sami Mawass">
+  <meta name="twitter:title" content="Manufacturing Analytics Suite: Case Study · Sami Mawass">
   <meta name="twitter:image" content="https://sami-mawass.github.io/sami-mawass/assets/og-image.png">
 
   <!-- Fonts -->
@@ -38,7 +38,7 @@
       {
         "@type": "CreativeWork",
         "headline": "Manufacturing Analytics Suite",
-        "description": "Power BI manufacturing analytics suite for a Scotland FMCG manufacturer — OEE, downtime, production, waste, and financial workstreams. ~2 hrs/shift of manual reporting eliminated.",
+        "description": "Power BI manufacturing analytics suite for a Scotland FMCG manufacturer: OEE, downtime, production, waste, and financial workstreams. ~2 hrs/shift of manual reporting eliminated.",
         "url": "https://sami-mawass.github.io/sami-mawass/case-fmcg-suite.html",
         "author": {
           "@type": "Person",
@@ -164,7 +164,7 @@
     <div class="case-prose" style="margin-top:24px;">
       <p>At the start of every shift, an FMCG manufacturer in Scotland had no automated view of what was happening on the production floor. Operators and supervisors spent approximately two hours manually pulling data from production systems into Excel, formatting it, and distributing reports before any analysis could begin.</p>
       <p>By the time a report reached the finance or operations team, the shift was already underway. Decisions about downtime response, waste thresholds, and production efficiency were made on figures that were always hours behind.</p>
-      <p>OEE — Overall Equipment Effectiveness — was calculated manually and inconsistently. Different people applied different formulas. The number meant different things to different teams.</p>
+      <p>OEE, Overall Equipment Effectiveness, was calculated manually and inconsistently. Different people applied different formulas. The number meant different things to different teams.</p>
     </div>
   </div>
 </section>
@@ -175,9 +175,9 @@
     <p class="case-label">Context</p>
     <h2 id="fmcg-suite-context-heading">SQL Server source, three stakeholder audiences, one floor.</h2>
     <div class="case-prose" style="margin-top:24px;">
-      <p>Production data lived in SQL Server, already captured by existing plant systems. The data was there — the problem was getting it to the right people, in the right shape, fast enough to be useful.</p>
+      <p>Production data lived in SQL Server, already captured by existing plant systems. The data was there. The problem was getting it to the right people, in the right shape, fast enough to be useful.</p>
       <p>Three distinct audiences needed different views of the same underlying data: <strong>operations</strong> needed real-time OEE and production output to act on; <strong>quality and line management</strong> needed downtime root-cause and waste intelligence; <strong>finance</strong> needed shift-level financial performance against targets.</p>
-      <p>The engagement grew over time as each workstream proved its value — beginning with the OEE and operations dashboard and expanding to cover downtime analysis, production statistics, waste and quality reporting, and finally the financial reporting suite.</p>
+      <p>The engagement grew over time as each workstream proved its value, beginning with the OEE and operations dashboard and expanding to cover downtime analysis, production statistics, waste and quality reporting, and finally the financial reporting suite.</p>
       <p>I owned the BI layer end to end, from client requirements sessions through SQL views, data models, and dashboards, to documentation and handover training.</p>
     </div>
   </div>
@@ -240,7 +240,7 @@
     </div>
 
     <div class="case-prose" style="margin-top:28px;">
-      <p>The SQL layer is the single source of truth for business logic — OEE formula, downtime categories, waste dimensions, and cost-centre mapping are all defined once in T-SQL views, not re-implemented per dashboard. Power BI imports from these views on a scheduled refresh, meaning every report sees the same numbers from the same agreed definitions.</p>
+      <p>The SQL layer is the single source of truth for business logic: OEE formula, downtime categories, waste dimensions, and cost-centre mapping are all defined once in T-SQL views, not re-implemented per dashboard. Power BI imports from these views on a scheduled refresh, meaning every report sees the same numbers from the same agreed definitions.</p>
     </div>
   </div>
 </section>
@@ -253,9 +253,9 @@
     <div class="case-prose" style="margin-top:24px;">
       <p>The first and highest-priority workstream. Built T-SQL views calculating OEE using the agreed availability × performance × quality formula across every production line. One formula, defined once, consistent in every report from day one.</p>
       <ul>
-        <li><strong>OEE dashboard</strong> — real-time OEE by line, shift, and product — replacing the manually calculated figure that varied by who had compiled it.</li>
-        <li><strong>Downtime summary view</strong> — unplanned stop events by category, visible to the operations supervisor at the start of each shift rather than retrospectively.</li>
-        <li><strong>Automated scheduled refresh</strong> — connected directly to SQL Server, replacing the entire manual extraction and distribution workflow.</li>
+        <li><strong>OEE dashboard:</strong> real-time OEE by line, shift, and product, replacing the manually calculated figure that varied by who had compiled it.</li>
+        <li><strong>Downtime summary view:</strong> unplanned stop events by category, visible to the operations supervisor at the start of each shift rather than retrospectively.</li>
+        <li><strong>Automated scheduled refresh:</strong> connected directly to SQL Server, replacing the entire manual extraction and distribution workflow.</li>
       </ul>
     </div>
   </div>
@@ -269,9 +269,9 @@
     <div class="case-prose" style="margin-top:24px;">
       <p>The maintenance register captured downtime events but had never been analysed systematically. Breakdowns were logged and forgotten rather than investigated for patterns. This workstream built the analysis layer on top of that data.</p>
       <ul>
-        <li><strong>Event classification framework</strong> — designed in collaboration with the engineering team: mechanical failure, electrical fault, operator error, changeover delay, and planned maintenance as the five core categories.</li>
-        <li><strong>Pareto analysis view</strong> — ranked failure categories by total downtime hours, making the highest-impact causes visible rather than buried in an unordered log.</li>
-        <li><strong>MTTR and frequency trending</strong> — mean time to repair and recurrence patterns tracked per equipment and category, enabling the engineering team to target their maintenance effort based on data rather than instinct.</li>
+        <li><strong>Event classification framework</strong>, designed in collaboration with the engineering team: mechanical failure, electrical fault, operator error, changeover delay, and planned maintenance as the five core categories.</li>
+        <li><strong>Pareto analysis view:</strong> ranked failure categories by total downtime hours, making the highest-impact causes visible rather than buried in an unordered log.</li>
+        <li><strong>MTTR and frequency trending:</strong> mean time to repair and recurrence patterns tracked per equipment and category, enabling the engineering team to target their maintenance effort based on data rather than instinct.</li>
       </ul>
     </div>
   </div>
@@ -283,11 +283,11 @@
     <p class="case-label">Workstream 3</p>
     <h2 id="ws3-heading">Production Statistics &amp; Output Performance</h2>
     <div class="case-prose" style="margin-top:24px;">
-      <p>Output was recorded manually on paper forms at shift handover and consolidated weekly in Excel — inconsistently, and typically a week behind. Production managers had no intra-shift view of output progress or cross-line performance comparison.</p>
+      <p>Output was recorded manually on paper forms at shift handover and consolidated weekly in Excel, inconsistently, and typically a week behind. Production managers had no intra-shift view of output progress or cross-line performance comparison.</p>
       <ul>
-        <li><strong>Structured data entry template</strong> — replaced paper forms with a lightweight shift-level input designed to feed directly into the Power BI data model without manual transformation.</li>
-        <li><strong>Output and attainment views</strong> — units produced vs. target by shift, production line, and product type. Target attainment percentage calculated consistently using Power Query transformations and DAX measures.</li>
-        <li><strong>Period-over-period and product mix analysis</strong> — weekly and monthly trend views enabling production managers to identify underperforming lines and output composition patterns.</li>
+        <li><strong>Structured data entry template:</strong> replaced paper forms with a lightweight shift-level input designed to feed directly into the Power BI data model without manual transformation.</li>
+        <li><strong>Output and attainment views:</strong> units produced vs. target by shift, production line, and product type. Target attainment percentage calculated consistently using Power Query transformations and DAX measures.</li>
+        <li><strong>Period-over-period and product mix analysis:</strong> weekly and monthly trend views enabling production managers to identify underperforming lines and output composition patterns.</li>
       </ul>
     </div>
   </div>
@@ -299,16 +299,16 @@
     <p class="case-label">Workstream 4</p>
     <h2 id="ws4-heading">Waste, Quality &amp; Financial Reporting</h2>
     <div class="case-prose" style="margin-top:24px;">
-      <p>Two separate reporting gaps — operational waste tracking and month-end financial reporting — were addressed in this final workstream. Both shared the same root problem: manual consolidation from disparate sources, producing static outputs that were out of date as soon as they were distributed.</p>
+      <p>Two separate reporting gaps, operational waste tracking and month-end financial reporting, were addressed in this final workstream. Both shared the same root problem: manual consolidation from disparate sources, producing static outputs that were out of date as soon as they were distributed.</p>
       <p><strong>Waste &amp; Quality</strong></p>
       <ul>
-        <li><strong>Six waste dimensions</strong> — defined jointly with quality managers and production supervisors: raw material waste, packaging waste, rework, overproduction, downtime-related waste, and quality rejections. Standardised data entry replaced ad-hoc paper records.</li>
-        <li><strong>Quality analysis views</strong> — waste by dimension, production line, product type, and shift — enabling pattern identification across the dimensions the team had agreed mattered most.</li>
+        <li><strong>Six waste dimensions</strong>, defined jointly with quality managers and production supervisors: raw material waste, packaging waste, rework, overproduction, downtime-related waste, and quality rejections. Standardised data entry replaced ad-hoc paper records.</li>
+        <li><strong>Quality analysis views:</strong> waste by dimension, production line, product type, and shift, enabling pattern identification across the dimensions the team had agreed mattered most.</li>
       </ul>
       <p><strong>Financial Reporting</strong></p>
       <ul>
-        <li><strong>Chart of accounts mapping</strong> — built dimension tables for account hierarchy, cost centres, and reporting periods. Mapped the firm's existing account structure to a Power BI data model without requiring changes to the source system.</li>
-        <li><strong>Three-statement financial suite</strong> — P&amp;L, Cash Flow, and Balance Sheet as interactive Power BI reports, with period-comparable drill-down and variance analysis replacing static monthly Excel packs.</li>
+        <li><strong>Chart of accounts mapping:</strong> built dimension tables for account hierarchy, cost centres, and reporting periods. Mapped the firm's existing account structure to a Power BI data model without requiring changes to the source system.</li>
+        <li><strong>Three-statement financial suite:</strong> P&amp;L, Cash Flow, and Balance Sheet as interactive Power BI reports, with period-comparable drill-down and variance analysis replacing static monthly Excel packs.</li>
       </ul>
     </div>
   </div>
@@ -323,8 +323,8 @@
       <ul>
         <li>Approximately two hours of manual reporting work per shift was eliminated. The time was recovered by operations and finance teams for actual analysis and decision-making.</li>
         <li>OEE is now calculated from a single agreed formula, consistently, across every production line and every shift. The number means the same thing in every meeting.</li>
-        <li>Finance has shift-level financial data available at the start of the shift — not hours later after manual compilation.</li>
-        <li>Downtime, waste, and production patterns that were previously invisible in aggregate became visible by line, product type, and time period — turning reactive responses into data-informed decisions.</li>
+        <li>Finance has shift-level financial data available at the start of the shift, not hours later after manual compilation.</li>
+        <li>Downtime, waste, and production patterns that were previously invisible in aggregate became visible by line, product type, and time period, turning reactive responses into data-informed decisions.</li>
         <li>The OEE breakdown identified speed loss as the primary efficiency driver, redirecting engineering attention to where it mattered most.</li>
       </ul>
     </div>
@@ -337,8 +337,8 @@
     <p class="case-label">Skills &amp; Analytics Engineering Relevance</p>
     <h2 id="fmcg-suite-skills-heading">The pipeline matters as much as the report.</h2>
     <div class="case-prose" style="margin-top:24px;">
-      <p>This suite made clear that the delivery mechanism — automated refresh replacing manual extraction — was as valuable as the dashboard design. The best report in the world is useless if the data flowing into it is two hours stale and requires a human to compile it.</p>
-      <p>The SQL models built here — defining OEE, categorising downtime, structuring shift financials — are exactly what dbt models do in a modern stack: a single source of truth for business logic, defined once, reusable across any downstream report. The architecture of this engagement is a direct analogue of the analytics engineering layer.</p>
+      <p>This suite made clear that the delivery mechanism, automated refresh replacing manual extraction, was as valuable as the dashboard design. The best report in the world is useless if the data flowing into it is two hours stale and requires a human to compile it.</p>
+      <p>The SQL models built here, defining OEE, categorising downtime, structuring shift financials, are exactly what dbt models do in a modern stack: a single source of truth for business logic, defined once, reusable across any downstream report. The architecture of this engagement is a direct analogue of the analytics engineering layer.</p>
     </div>
     <div class="case-skills">
       <span class="case-skill-chip">SQL Server</span>
