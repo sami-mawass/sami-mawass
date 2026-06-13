@@ -283,7 +283,7 @@ h4 { font-size: 15px; font-weight: 600; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 56px;
-  align-items: center;
+  align-items: stretch;
 }
 .hero-text .eyebrow { color: var(--muted); }
 .accent-bar {
@@ -336,6 +336,9 @@ h4 { font-size: 15px; font-weight: 600; }
   padding: 16px 18px 14px;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .hero-chart-header {
   display: flex;
