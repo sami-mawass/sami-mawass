@@ -26,10 +26,37 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/tokens.css">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "name": "Personal Projects",
+        "description": "Self-directed projects built outside of client work by Sami Mawass, exploring AI-native development workflows, product thinking, and personal branding.",
+        "url": "https://sami-mawass.github.io/sami-mawass/personal-projects.html",
+        "author": {
+          "@type": "Person",
+          "name": "Sami Mawass",
+          "url": "https://sami-mawass.github.io/sami-mawass/"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://sami-mawass.github.io/sami-mawass/"},
+          {"@type": "ListItem", "position": 2, "name": "Personal Projects", "item": "https://sami-mawass.github.io/sami-mawass/personal-projects.html"}
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to content</a>
@@ -54,12 +81,12 @@
               Portfolio
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
-            <div id="port-dropdown" class="nav-dropdown" role="menu">
-              <a href="client-projects.html" role="menuitem">
+            <div id="port-dropdown" class="nav-dropdown">
+              <a href="client-projects.html">
                 <svg class="drop-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M3 21V7a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v14M13 21V11a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v10M3 21h18"/></svg>
                 Client Projects
               </a>
-              <a href="personal-projects.html" role="menuitem" aria-current="page">
+              <a href="personal-projects.html" aria-current="page">
                 <svg class="drop-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
                 Personal Projects
               </a>
@@ -92,7 +119,7 @@
 <main id="main-content">
 
 <!-- ===================== PAGE HERO ===================== -->
-<div style="background:var(--grad-ink);color:var(--n50);position:relative;overflow:hidden;">
+<div class="page-hero-ink" style="background:var(--grad-ink);color:var(--n50);position:relative;overflow:hidden;">
   <div aria-hidden="true" style="position:absolute;inset:0;background-image:radial-gradient(circle,var(--line-dark) 2px,transparent 2px);background-size:34px 34px;opacity:.5;pointer-events:none;"></div>
   <div class="wrap" style="position:relative;padding:72px 32px 80px;">
     <a href="index.html#work" style="display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:12.5px;letter-spacing:.5px;color:var(--n50-a55);margin-bottom:28px;">

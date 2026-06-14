@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git checkout *)",
+      "Bash(python3 -c \"from PIL import Image; print\\('Pillow OK'\\)\")",
+      "Bash(python -c \"from PIL import Image; print\\('Pillow OK'\\)\")",
+      "Bash(ls \"c:\\\\Users\\\\hp\\\\Documents\\\\sami-mawass\\\\assets\\\\sami-photo.png\" 2>/dev/null && stat -c \"%s\" \"c:\\\\Users\\\\hp\\\\Documents\\\\sami-mawass\\\\assets\\\\sami-photo.png\" 2>/dev/null || echo \"file check failed\")",
+      "Read(//c/Users/hp/Documents/sami-mawass/**)",
+      "PowerShell(Get-Command cwebp -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Command magick -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Command npx -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Command node -ErrorAction SilentlyContinue)",
+      "PowerShell(python -c \"from PIL import Image; print\\('Pillow OK'\\)\" 2>$null)",
+      "PowerShell(python -c \"from PIL import Image; print\\('Pillow OK'\\)\" 2>&1)",
+      "PowerShell(python -m pip install Pillow --quiet 2>&1)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(python -c \"import os; print\\('webp:', os.path.getsize\\('assets/sami-photo.webp'\\), 'bytes'\\); print\\('jpg:', os.path.getsize\\('assets/sami-photo.jpg'\\), 'bytes'\\); print\\('png:', os.path.getsize\\('assets/sami-photo.png'\\), 'bytes'\\)\")"
+    ]
+  }
+}

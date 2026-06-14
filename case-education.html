@@ -26,7 +26,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/tokens.css">
   <link rel="stylesheet" href="style.css">
@@ -83,12 +83,12 @@
               Portfolio
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
-            <div id="port-dropdown" class="nav-dropdown" role="menu">
-              <a href="client-projects.html" role="menuitem">
+            <div id="port-dropdown" class="nav-dropdown">
+              <a href="client-projects.html">
                 <svg class="drop-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M3 21V7a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v14M13 21V11a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v10M3 21h18"/></svg>
                 Client Projects
               </a>
-              <a href="personal-projects.html" role="menuitem">
+              <a href="personal-projects.html">
                 <svg class="drop-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
                 Personal Projects
               </a>
@@ -121,7 +121,7 @@
 <main id="main-content">
 
 <!-- ===================== PAGE HERO ===================== -->
-<div style="background:var(--grad-ink);color:var(--n50);position:relative;overflow:hidden;">
+<div class="page-hero-ink" style="background:var(--grad-ink);color:var(--n50);position:relative;overflow:hidden;">
   <div aria-hidden="true" style="position:absolute;inset:0;background-image:radial-gradient(circle,var(--line-dark) 2px,transparent 2px);background-size:34px 34px;opacity:.5;pointer-events:none;"></div>
   <div class="wrap" style="position:relative;padding:72px 32px 80px;">
     <a href="client-projects.html" style="display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:12.5px;letter-spacing:.5px;color:var(--n50-a55);margin-bottom:28px;">
@@ -309,6 +309,44 @@
       <span class="case-skill-chip">T-SQL</span>
       <span class="case-skill-chip">Power BI Report Server</span>
       <span class="case-skill-chip">Stakeholder Handoff</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== RELATED WORK ===================== -->
+<section class="sec sec--ink" aria-labelledby="related-heading">
+  <div class="wrap" style="max-width:800px;">
+    <p class="case-label">Related work</p>
+    <h2 id="related-heading" style="margin-bottom:28px;">Other case studies</h2>
+    <div class="proj-grid" style="grid-template-columns:repeat(2,1fr);">
+      <article class="proj-card reveal">
+        <div class="proj-vis" aria-hidden="true">
+          <svg viewBox="0 0 260 96" preserveAspectRatio="none" style="width:100%;height:100%">
+            <polyline points="10,40 55,52 100,34 150,58 200,44 250,70" fill="none" stroke="#50E6FF" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+            <polygon points="10,90 10,40 55,52 100,34 150,58 200,44 250,70 250,90" fill="rgba(80,230,255,.07)"/>
+          </svg>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tag">Government · UAE</div>
+          <h3 class="proj-title">National Workforce-Productivity Analytics</h3>
+          <p class="proj-desc">Analytics across 30+ entities and ~38,000 employees for a UAE federal government HR authority.</p>
+          <a href="case-government.html" class="proj-case-link">Read case study →</a>
+        </div>
+      </article>
+      <article class="proj-card reveal">
+        <div class="proj-vis" aria-hidden="true">
+          <svg viewBox="0 0 260 96" preserveAspectRatio="none" style="width:100%;height:100%">
+            <polyline points="10,86 55,64 100,74 150,40 200,52 250,24" fill="none" stroke="#50E6FF" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+            <polygon points="10,90 10,86 55,64 100,74 150,40 200,52 250,24 250,90" fill="rgba(80,230,255,.07)"/>
+          </svg>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tag">FMCG · Scotland</div>
+          <h3 class="proj-title">Manufacturing Analytics Suite</h3>
+          <p class="proj-desc">OEE, downtime, waste, and financial dashboards. ~2 hrs/shift of manual reporting eliminated.</p>
+          <a href="case-fmcg-suite.html" class="proj-case-link">Read case study →</a>
+        </div>
+      </article>
     </div>
   </div>
 </section>
