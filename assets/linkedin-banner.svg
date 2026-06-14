@@ -1,1 +1,79 @@
-<svg viewBox="0 0 1584 396" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#50E6FF"></stop><stop offset="0.45" stop-color="#0078D4"></stop><stop offset="1" stop-color="#15B392"></stop></linearGradient><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1B2E"></stop><stop offset="1" stop-color="#102A47"></stop></linearGradient><pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="2" fill="#1B3A5C"></circle></pattern></defs><rect width="1584" height="396" fill="url(#bg)"></rect><rect width="1584" height="396" fill="url(#dots)" opacity="0.55"></rect><polyline points="1010,300 1080,250 1150,272 1220,196 1290,224 1360,150 1430,176 1500,104" fill="none" stroke="url(#g)" stroke-width="3.5" opacity="0.5" stroke-linecap="round" stroke-linejoin="round"></polyline><g opacity="0.6"><circle cx="1010" cy="300" r="5" fill="#50E6FF"></circle><circle cx="1080" cy="250" r="5" fill="#0078D4"></circle><circle cx="1150" cy="272" r="5" fill="#0078D4"></circle><circle cx="1220" cy="196" r="5" fill="#0078D4"></circle><circle cx="1290" cy="224" r="5" fill="#15B392"></circle><circle cx="1360" cy="150" r="5" fill="#15B392"></circle><circle cx="1430" cy="176" r="5" fill="#15B392"></circle><circle cx="1500" cy="104" r="5" fill="#15B392"></circle></g><g transform="translate(250,118) scale(0.310)"><rect width="512" height="512" rx="116" fill="#0B1B2E"></rect><rect x="14" y="14" width="484" height="484" rx="104" fill="none" stroke="#1B3A5C" stroke-width="3"></rect><path d="M 366 168 L 230 168 Q 176 168 176 220 Q 176 256 230 256 L 290 256 Q 344 256 344 308 Q 344 344 290 344 L 150 344" fill="none" stroke="url(#g)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="366" cy="168" r="20" fill="#0B1B2E" stroke="url(#g)" stroke-width="10"></circle><circle cx="150" cy="344" r="20" fill="#0B1B2E" stroke="url(#g)" stroke-width="10"></circle><circle cx="256" cy="256" r="11" fill="#50E6FF"></circle></g><text x="440" y="170" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="76" letter-spacing="-2" fill="#F8FAFC">Sami Mawass</text><rect x="444" y="198" width="64" height="5" rx="2.5" fill="url(#g)"></rect><text x="444" y="248" font-family="IBM Plex Mono, monospace" font-weight="500" font-size="22" letter-spacing="1.5" fill="#50E6FF">ANALYTICS ENGINEER · MICROSOFT POWER BI &amp; FABRIC SPECIALIST</text><text x="444" y="292" font-family="IBM Plex Mono, monospace" font-weight="400" font-size="21" letter-spacing="2" fill="#94A3B8">Power BI · Power Query/M · DAX · SQL · Microsoft Fabric</text></svg>
+<svg width="1584" height="396" viewBox="0 0 1584 396" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    
+    <linearGradient id="bg" x1="0" y1="0" x2="1584" y2="396" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B1B2E"></stop>
+      <stop offset="100%" stop-color="#102A47"></stop>
+    </linearGradient>
+    <linearGradient id="g-logo" x1="366" y1="168" x2="150" y2="344" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#50E6FF"></stop>
+      <stop offset="50%" stop-color="#0078D4"></stop>
+      <stop offset="100%" stop-color="#15B392"></stop>
+    </linearGradient>
+    <linearGradient id="g-chart" x1="60" y1="0" x2="566" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#50E6FF"></stop>
+      <stop offset="45%" stop-color="#0078D4"></stop>
+      <stop offset="100%" stop-color="#15B392"></stop>
+    </linearGradient>
+    <linearGradient id="g-bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#50E6FF"></stop>
+      <stop offset="45%" stop-color="#0078D4"></stop>
+      <stop offset="100%" stop-color="#15B392"></stop>
+    </linearGradient>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#1B3A5C"></circle>
+    </pattern>
+    <radialGradient id="badge-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0078D4" stop-opacity="0.14"></stop>
+      <stop offset="100%" stop-color="#0078D4" stop-opacity="0"></stop>
+    </radialGradient>
+    <radialGradient id="node-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#15B392" stop-opacity="0.25"></stop>
+      <stop offset="100%" stop-color="#15B392" stop-opacity="0"></stop>
+    </radialGradient>
+  </defs>
+
+  
+  <rect width="1584" height="396" fill="url(#bg)"></rect>
+  <rect width="1584" height="396" fill="url(#grid)" opacity="0.45"></rect>
+
+  
+  <polygon points="60,316 140,272 210,288 284,216 354,234 424,154 494,172 566,94 566,350 60,350" fill="url(#g-chart)" opacity="0.05"></polygon>
+  <polyline points="60,316 140,272 210,288 284,216 354,234 424,154 494,172 566,94" fill="none" stroke="url(#g-chart)" stroke-width="2.5" opacity="0.62" stroke-linecap="round" stroke-linejoin="round"></polyline>
+  <line x1="52" y1="340" x2="576" y2="340" stroke="#1B3A5C" stroke-width="1"></line>
+  <circle cx="60" cy="316" r="5" fill="#50E6FF" opacity="0.75"></circle>
+  <circle cx="140" cy="272" r="4.5" fill="#50E6FF" opacity="0.70"></circle>
+  <circle cx="210" cy="288" r="4.5" fill="#3A9FE0" opacity="0.72"></circle>
+  <circle cx="284" cy="216" r="5" fill="#0078D4" opacity="0.82"></circle>
+  <circle cx="354" cy="234" r="4.5" fill="#0078D4" opacity="0.72"></circle>
+  <circle cx="424" cy="154" r="5" fill="#15B392" opacity="0.82"></circle>
+  <circle cx="494" cy="172" r="4.5" fill="#15B392" opacity="0.75"></circle>
+  <ellipse cx="566" cy="94" rx="24" ry="24" fill="url(#node-glow)"></ellipse>
+  <circle cx="566" cy="94" r="6" fill="#15B392" opacity="0.92"></circle>
+  <circle cx="566" cy="94" r="11" fill="none" stroke="#15B392" stroke-width="1.5" opacity="0.48"></circle>
+
+  
+  <line x1="614" y1="96" x2="614" y2="300" stroke="#1B3A5C" stroke-width="1.5"></line>
+
+  
+  <ellipse cx="723" cy="198" rx="94" ry="94" fill="url(#badge-glow)"></ellipse>
+  <g transform="translate(636,111) scale(0.34)">
+    <rect width="512" height="512" rx="116" fill="#0D1F35"></rect>
+    <rect x="12" y="12" width="488" height="488" rx="106" fill="none" stroke="#1B3A5C" stroke-width="2"></rect>
+    <path d="M 366 168 L 230 168 Q 176 168 176 220 Q 176 256 230 256 L 290 256 Q 344 256 344 308 Q 344 344 290 344 L 150 344" fill="none" stroke="url(#g-logo)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"></path>
+    <circle cx="366" cy="168" r="20" fill="#0D1F35" stroke="url(#g-logo)" stroke-width="10"></circle>
+    <circle cx="150" cy="344" r="20" fill="#0D1F35" stroke="url(#g-logo)" stroke-width="10"></circle>
+  </g>
+
+  
+  <text x="836" y="188" font-family="&#39;Space Grotesk&#39;, &#39;Trebuchet MS&#39;, sans-serif" font-weight="700" font-size="80" letter-spacing="-1.5" fill="#F8FAFC">Sami Mawass</text>
+
+  
+  <rect x="836" y="202" width="380" height="3.5" rx="1.75" fill="url(#g-bar)"></rect>
+
+  
+  <text x="836" y="236" font-family="&#39;IBM Plex Mono&#39;, &#39;Courier New&#39;, monospace" font-size="20" fill="rgba(248,250,252,0.72)">BI Developer · Data Analyst · Power BI Specialist</text>
+
+  
+  <text x="836" y="264" font-family="&#39;IBM Plex Mono&#39;, &#39;Courier New&#39;, monospace" font-size="14" fill="rgba(80,230,255,0.62)">Power BI · SQL · DAX · Semantic Modeling · Microsoft Fabric (DP-600 Certified)</text>
+</svg>
