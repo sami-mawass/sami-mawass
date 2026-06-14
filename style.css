@@ -604,6 +604,10 @@ h4 { font-size: 15px; font-weight: 600; }
   flex-shrink: 0;
   margin-top: 4px;
 }
+.timeline-dot--active {
+  background: var(--azure);
+  box-shadow: 0 0 0 5px rgba(80,230,255,.12);
+}
 .timeline-line {
   width: 1px;
   flex: 1;
@@ -640,6 +644,27 @@ h4 { font-size: 15px; font-weight: 600; }
   list-style: disc;
 }
 .timeline-bullets li::marker { color: var(--azure); }
+.timeline-intro {
+  font-size: 13.5px;
+  color: var(--fg2);
+  line-height: 1.6;
+  margin-bottom: 12px;
+  font-style: italic;
+}
+.badge-current {
+  display: inline-block;
+  font-size: 9.5px;
+  font-family: var(--mono);
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--azure);
+  background: rgba(80,230,255,.1);
+  border: 1px solid rgba(80,230,255,.25);
+  border-radius: 4px;
+  padding: 1px 6px;
+  vertical-align: middle;
+  margin-left: 6px;
+}
 
 /* Right column — education + certs */
 .exp-sidebar-card {
