@@ -167,7 +167,7 @@
         </div>
       </div>
 
-      <!-- Engagements delivered chart, cumulative by year-end: 5, 9, 13, 17, 18 -->
+      <!-- Growth trend chart: qualitative upward arc, no quantitative scale -->
       <div class="hero-chart-card reveal" role="img" aria-label="Enterprise BI delivery, 2022 to present">
         <div class="hero-chart-header">
           <span class="mono-label">Enterprise BI delivery · 2022 → Present</span>
@@ -187,19 +187,19 @@
 
           <!-- Baseline -->
           <line x1="6" y1="153" x2="424" y2="153" stroke="rgba(80,230,255,.13)" stroke-width="1"/>
-          <!-- Area fill, scale: baseline y=153, max(18) at y=33, 6.667px/unit -->
-          <path d="M35,153 L35,120 L125,93 L215,66 L305,40 L395,33 L395,153 Z" fill="url(#area-grad)"/>
+          <!-- Area fill -->
+          <path d="M35,153 L35,130 L125,97 L215,67 L305,44 L395,34 L395,153 Z" fill="url(#area-grad)"/>
           <!-- Animated line -->
           <polyline class="chart-line"
-            points="35,120 125,93 215,66 305,40 395,33"
+            points="35,130 125,97 215,67 305,44 395,34"
             fill="none" stroke="#50E6FF" stroke-width="2.5"
             stroke-linecap="round" stroke-linejoin="round" filter="url(#ln-glow)"/>
           <!-- Year dots -->
-          <circle cx="35"  cy="120" r="4.5" fill="#071626" stroke="#50E6FF" stroke-width="2.5" filter="url(#ln-glow)"/>
-          <circle cx="125" cy="93"  r="4.5" fill="#071626" stroke="#50E6FF" stroke-width="2.5" filter="url(#ln-glow)"/>
-          <circle cx="215" cy="66"  r="4.5" fill="#071626" stroke="#50E6FF" stroke-width="2.5" filter="url(#ln-glow)"/>
-          <circle cx="305" cy="40"  r="4.5" fill="#071626" stroke="#50E6FF" stroke-width="2.5" filter="url(#ln-glow)"/>
-          <circle cx="395" cy="33"  r="4.5" fill="#071626" stroke="#50E6FF" stroke-width="2.5" filter="url(#ln-glow)"/>
+          <circle cx="35"  cy="130" r="4.5" fill="#071626" stroke="#50E6FF" stroke-width="2.5" filter="url(#ln-glow)"/>
+          <circle cx="125" cy="97"  r="4.5" fill="#071626" stroke="#50E6FF" stroke-width="2.5" filter="url(#ln-glow)"/>
+          <circle cx="215" cy="67"  r="4.5" fill="#071626" stroke="#50E6FF" stroke-width="2.5" filter="url(#ln-glow)"/>
+          <circle cx="305" cy="44"  r="4.5" fill="#071626" stroke="#50E6FF" stroke-width="2.5" filter="url(#ln-glow)"/>
+          <circle cx="395" cy="34"  r="4.5" fill="#071626" stroke="#50E6FF" stroke-width="2.5" filter="url(#ln-glow)"/>
           <!-- Year labels -->
           <text x="35"  y="168" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" class="c-axis">2022</text>
           <text x="125" y="168" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" class="c-axis">2023</text>
