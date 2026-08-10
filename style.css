@@ -1434,6 +1434,96 @@ h4 { font-size: 15px; font-weight: 600; }
 .sp-44 { height: 44px; }
 
 /* ==========================================================================
+   TESTIMONIALS
+   ========================================================================== */
+.testi-featured,
+.testi-card {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--azure);
+  border-radius: var(--radius);
+  padding: 28px 28px 24px;
+  margin: 0;
+  box-shadow: var(--sh-sm);
+  display: flex;
+  flex-direction: column;
+  transition: border-color var(--dur), box-shadow var(--dur), transform var(--dur);
+}
+.testi-featured:hover,
+.testi-card:hover {
+  border-color: rgba(0,120,212,.4);
+  box-shadow: var(--sh-md);
+  transform: translateY(-2px);
+}
+.testi-featured {
+  margin-bottom: 24px;
+  max-width: 760px;
+}
+.testi-quote {
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--fg2);
+  margin: 0;
+  font-style: italic;
+}
+.testi-quote--more {
+  margin-top: 16px;
+}
+.testi-details {
+  margin-top: 16px;
+}
+.testi-expand-btn {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .5px;
+  color: var(--azure);
+  cursor: pointer;
+  list-style: none;
+  transition: color var(--dur);
+  user-select: none;
+}
+.testi-expand-btn:hover { color: var(--cyan); }
+.testi-expand-btn::-webkit-details-marker { display: none; }
+.testi-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+.testi-avatar {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--azure), var(--cyan));
+  flex-shrink: 0;
+}
+.testi-name {
+  font-family: var(--head);
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--fg1);
+  font-style: normal;
+  display: block;
+}
+.testi-role {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: .4px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+.testi-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+@media (max-width: 600px) {
+  .testi-grid { grid-template-columns: 1fr; }
+  .testi-featured { max-width: 100%; }
+}
+
+/* ==========================================================================
    ACCESSIBILITY UTILITIES
    ========================================================================== */
 .sr-only {
