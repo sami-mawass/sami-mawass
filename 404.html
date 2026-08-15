@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found · Sami Mawass</title>
+
+  <meta name="description" content="The page you're looking for doesn't exist. Return to Sami Mawass's BI Developer portfolio.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/svg+xml" href="assets/logo-mark-light.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/tokens.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<!-- ===================== NAV ===================== -->
+<header>
+  <nav class="nav" aria-label="Main navigation">
+    <div class="wrap">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-brand">
+          <img src="assets/logo-mark-dark.svg" alt="" width="22" height="22">
+          Sami Mawass
+        </a>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="index.html#resume">Experience</a>
+
+          <div class="nav-drop">
+            <button id="port-drop-btn" class="nav-drop-btn" aria-expanded="false" aria-controls="port-dropdown">
+              Portfolio
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div id="port-dropdown" class="nav-dropdown">
+              <a href="client-projects.html">
+                <svg class="drop-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M3 21V7a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v14M13 21V11a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v10M3 21h18"/></svg>
+                Client Projects
+              </a>
+              <a href="personal-projects.html">
+                <svg class="drop-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
+                Personal Projects
+              </a>
+            </div>
+          </div>
+
+          <a href="index.html#stack">Skills</a>
+          <a href="index.html#contact" class="nav-cta">Get in touch</a>
+        </div>
+
+        <button id="nav-burger" class="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="index.html#resume">Experience</a>
+        <a href="index.html#work">Portfolio</a>
+        <a href="client-projects.html" class="indent">↳ Client Projects</a>
+        <a href="personal-projects.html" class="indent">↳ Personal Projects</a>
+        <a href="index.html#stack">Skills</a>
+        <a href="index.html#contact">Get in touch</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+<!-- ===================== 404 HERO ===================== -->
+<div class="page-hero-ink" style="background:var(--grad-ink);color:var(--n50);position:relative;overflow:hidden;">
+  <div aria-hidden="true" style="position:absolute;inset:0;background-image:radial-gradient(circle,var(--line-dark) 2px,transparent 2px);background-size:34px 34px;opacity:.5;pointer-events:none;"></div>
+  <div class="wrap" style="position:relative;padding:96px 32px 110px;text-align:center;">
+    <p class="eyebrow eyebrow--cyan">404</p>
+    <h1 style="color:var(--n50);font-family:var(--head);font-weight:700;font-size:46px;letter-spacing:-1.8px;margin:0 0 16px;line-height:1.05;">This page doesn't exist.</h1>
+    <p style="font-size:17px;color:var(--n50-a72);max-width:520px;margin:0 auto 32px;line-height:1.6;">The link may be broken or the page may have moved. Head back to the homepage or browse the case studies.</p>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;">
+      <a href="index.html" class="btn btn-primary">
+        Back to home
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="client-projects.html" class="btn btn-ghost">
+        View case studies
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-inner">
+      <a href="index.html#top" class="foot-brand">
+        <img src="assets/logo-mark-dark.svg" alt="" width="20" height="20" aria-hidden="true">
+        Sami Mawass
+      </a>
+      <p class="foot-copy">© 2026 Sami Mawass. All rights reserved.</p>
+      <div class="foot-links">
+        <a href="https://www.linkedin.com/in/sami-mawass" target="_blank" rel="noopener" aria-label="LinkedIn" data-goatcounter-click="linkedin-click">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/sami-mawass" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="mailto:sami.mawass@outlook.com" aria-label="Email" data-goatcounter-click="email-click">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script data-goatcounter="https://sami-mawass.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
