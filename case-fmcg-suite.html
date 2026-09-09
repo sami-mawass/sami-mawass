@@ -127,7 +127,7 @@
     <p class="eyebrow eyebrow--cyan">Case Study</p>
     <div class="proj-tag" style="color:var(--n50-a60);margin-bottom:12px;">FMCG · Scotland · 2023–2024</div>
     <h1 style="color:var(--n50);font-family:var(--head);font-weight:700;font-size:42px;letter-spacing:-1.6px;margin:0 0 16px;line-height:1.08;">Manufacturing Analytics<br>Suite</h1>
-    <p style="font-size:17px;color:var(--n50-a72);max-width:600px;margin:0 0 28px;line-height:1.6;">SQL-based Power BI reporting across five reporting areas in four delivery workstreams for an FMCG manufacturer in Scotland. Automated scheduled refresh replaced approximately two hours of manual Excel reporting per shift.</p>
+    <p style="font-size:17px;color:var(--n50-a72);max-width:600px;margin:0 0 28px;line-height:1.6;">SQL-based Power BI reporting across five reporting areas in four delivery workstreams for a Scottish FMCG food manufacturer, delivered through a managed IT contractor. Automated scheduled refresh replaced approximately two hours of manual Excel reporting per shift.</p>
     <div style="display:flex;flex-wrap:wrap;gap:8px;">
       <span style="font-family:var(--mono);font-size:10px;letter-spacing:2px;padding:5px 12px;border-radius:6px;background:var(--cyan-a10);border:1px solid var(--cyan-a20);color:var(--cyan);">SQL Server</span>
       <span style="font-family:var(--mono);font-size:10px;letter-spacing:2px;padding:5px 12px;border-radius:6px;background:var(--cyan-a10);border:1px solid var(--cyan-a20);color:var(--cyan);">Power BI</span>
@@ -151,8 +151,8 @@
         <div class="outcome-label">reporting areas delivered: OEE, downtime, production, waste, financial</div>
       </div>
       <div class="outcome-card reveal">
-        <div class="outcome-val">Real-time</div>
-        <div class="outcome-label">OEE visibility on the production floor</div>
+        <div class="outcome-val">Live</div>
+        <div class="outcome-label">OEE visibility on the production floor via DirectQuery</div>
       </div>
     </div>
   </div>
@@ -177,8 +177,8 @@
     <p class="case-label">Context</p>
     <h2 id="fmcg-suite-context-heading">SQL Server source, three stakeholder audiences, one floor.</h2>
     <div class="case-prose" style="margin-top:24px;">
-      <p>Production data lived in SQL Server, already captured by existing plant systems. The data was there. The problem was getting it to the right people, in the right shape, fast enough to be useful.</p>
-      <p>Three distinct audiences needed different views of the same underlying data: <strong>operations</strong> needed real-time OEE and production output to act on; <strong>quality and line management</strong> needed downtime root-cause and waste intelligence; <strong>finance</strong> needed shift-level financial performance against targets.</p>
+      <p>Production data started as operator-entered Excel sheets on SharePoint. A colleague loaded that data into SQL Server tables, and I built the SQL views on top of it. The data was there. The problem was getting it to the right people, in the right shape, fast enough to be useful.</p>
+      <p>Three distinct audiences needed different views of the same underlying data: <strong>operations</strong> needed live, on-floor OEE and production output to act on; <strong>quality and line management</strong> needed downtime root-cause and waste intelligence; <strong>finance</strong> needed shift-level financial performance against targets.</p>
       <p>The engagement grew over time as each workstream proved its value, beginning with the OEE and operations dashboard and expanding to cover downtime analysis, production statistics, waste and quality reporting, and finally the financial reporting suite.</p>
       <p>I owned the BI layer end to end, from client requirements sessions through SQL views, data models, and dashboards, to documentation and handover training.</p>
     </div>
@@ -255,7 +255,7 @@
     <div class="case-prose" style="margin-top:24px;">
       <p>The first and highest-priority workstream. Built T-SQL views calculating OEE using the agreed availability × performance × quality formula across every production line. One formula, defined once, consistent in every report from day one.</p>
       <ul>
-        <li><strong>OEE dashboard:</strong> real-time OEE by line, shift, and product, replacing the manually calculated figure that varied by who had compiled it.</li>
+        <li><strong>OEE dashboard:</strong> live-connected OEE by line, shift, and product, delivered as two versions — a DirectQuery build for the production floor and a scheduled-refresh build for management, replacing the manually calculated figure that varied by who had compiled it.</li>
         <li><strong>Downtime summary view:</strong> unplanned stop events by category, visible to the operations supervisor at the start of each shift rather than retrospectively.</li>
         <li><strong>Automated scheduled refresh:</strong> connected directly to SQL Server, replacing the entire manual extraction and distribution workflow.</li>
       </ul>
@@ -320,7 +320,7 @@
 <section class="sec sec--dark" aria-labelledby="fmcg-suite-outcome-heading">
   <div class="wrap" style="max-width:800px;">
     <p class="case-label">Outcome</p>
-    <h2 id="fmcg-suite-outcome-heading">~2 hours/shift recovered. Real-time OEE on the floor.</h2>
+    <h2 id="fmcg-suite-outcome-heading">~2 hours/shift recovered. Live OEE on the floor.</h2>
     <div class="case-prose" style="margin-top:24px;">
       <ul>
         <li>Approximately two hours of manual reporting work per shift was eliminated. The time was recovered by operations and finance teams for actual analysis and decision-making.</li>
@@ -388,7 +388,7 @@
         <div class="proj-body">
           <div class="proj-tag">Government · UAE</div>
           <h3 class="proj-title">National Workforce-Productivity Analytics</h3>
-          <p class="proj-desc">Analytics across 30+ entities and ~38,000 employees for a UAE federal government HR authority.</p>
+          <p class="proj-desc">Analytics across dozens of government entities and tens of thousands of employees for a UAE government HR authority.</p>
           <a href="case-government.html" class="proj-case-link">Read case study →</a>
         </div>
       </article>
