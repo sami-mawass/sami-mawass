@@ -14,7 +14,7 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Production Reporting Suite: Case Study · Sami Mawass">
-  <meta property="og:description" content="SQL-based Power BI analytics suite for a Scotland FMCG manufacturer: five reporting areas in four delivery workstreams, ~2 hrs/shift manual reporting eliminated.">
+  <meta property="og:description" content="Power BI reporting suite for a Scotland FMCG manufacturer: five reporting areas in four delivery workstreams, ~2 hrs/shift manual reporting eliminated.">
   <meta property="og:url" content="https://sami-mawass.github.io/sami-mawass/case-fmcg-suite.html">
   <meta property="og:image" content="https://sami-mawass.github.io/sami-mawass/assets/og-image.png">
   <meta property="og:image:width" content="1200">
@@ -127,7 +127,7 @@
     <p class="eyebrow eyebrow--cyan">Case Study</p>
     <div class="proj-tag" style="color:var(--n50-a60);margin-bottom:12px;">FMCG · Scotland · 2023–2024</div>
     <h1 style="color:var(--n50);font-family:var(--head);font-weight:700;font-size:42px;letter-spacing:-1.6px;margin:0 0 16px;line-height:1.08;">Production Reporting<br>Suite</h1>
-    <p style="font-size:17px;color:var(--n50-a72);max-width:600px;margin:0 0 28px;line-height:1.6;">SQL-based Power BI reporting across five reporting areas in four delivery workstreams for a Scottish FMCG food manufacturer, delivered through a managed IT contractor. Automated scheduled refresh replaced approximately two hours of manual Excel reporting per shift.</p>
+    <p style="font-size:17px;color:var(--n50-a72);max-width:600px;margin:0 0 28px;line-height:1.6;">Power BI reporting across five reporting areas in four delivery workstreams for a Scottish FMCG food manufacturer, delivered through a managed IT contractor: a SQL Server pipeline for shop-floor metrics paired with a parallel, Excel-sourced financial reporting build. Automated scheduled refresh replaced approximately two hours of manual Excel reporting per shift.</p>
     <div style="display:flex;flex-wrap:wrap;gap:8px;">
       <span style="font-family:var(--mono);font-size:10px;letter-spacing:2px;padding:5px 12px;border-radius:6px;background:var(--cyan-a10);border:1px solid var(--cyan-a20);color:var(--cyan);">SQL Server</span>
       <span style="font-family:var(--mono);font-size:10px;letter-spacing:2px;padding:5px 12px;border-radius:6px;background:var(--cyan-a10);border:1px solid var(--cyan-a20);color:var(--cyan);">Power BI</span>
@@ -309,7 +309,7 @@
       </ul>
       <p><strong>Financial Reporting</strong></p>
       <ul>
-        <li><strong>Chart of accounts mapping:</strong> built dimension tables for account hierarchy, cost centres, and reporting periods. Mapped the firm's existing account structure to a Power BI data model without requiring changes to the source system.</li>
+        <li><strong>Source &amp; schema design:</strong> sourced from the client's own Excel files, shared over SharePoint, rather than the SQL Server pipeline behind the shop-floor workstreams — Budget 2024, Latest Forecast 2024, a multi-year Financial Model, and separate P&amp;L and Balance Sheet mapping workbooks. Designed the P&amp;L layout hierarchy (level 1/level 2 categories, ordering, highlight and formatting flags) and an equivalent Balance Sheet layout and ledger mapping structure from scratch, then built most of the transformation in Power Query M, joining the raw client files against that schema.</li>
         <li><strong>Three-statement financial suite:</strong> P&amp;L, Cash Flow, and Balance Sheet as interactive Power BI reports, with period-comparable drill-down and variance analysis replacing static monthly Excel packs.</li>
       </ul>
     </div>
@@ -340,7 +340,8 @@
     <h2 id="fmcg-suite-skills-heading">The pipeline matters as much as the report.</h2>
     <div class="case-prose" style="margin-top:24px;">
       <p>This suite made clear that the delivery mechanism, automated refresh replacing manual extraction, was as valuable as the dashboard design. The best report in the world is useless if the data flowing into it is two hours stale and requires a human to compile it.</p>
-      <p>The SQL models built here, defining OEE, categorizing downtime, structuring shift financials, are exactly what dbt models do in a modern stack: a single source of truth for business logic, defined once, reusable across any downstream report. The architecture of this engagement is a direct equivalent of the analytics engineering layer.</p>
+      <p>The SQL models built here, defining OEE and categorizing downtime, are exactly what dbt models do in a modern stack: a single source of truth for business logic, defined once, reusable across any downstream report. The architecture of this engagement is a direct equivalent of the analytics engineering layer.</p>
+      <p>The financial reporting workstream ran on a separate track: a Power Query M pipeline pulling from the client's Excel files, structured around a P&amp;L and Balance Sheet layout and mapping schema designed from scratch. Different toolchain, same underlying discipline, a single defined schema driving every downstream report.</p>
     </div>
     <div class="case-skills">
       <span class="case-skill-chip">SQL Server</span>
