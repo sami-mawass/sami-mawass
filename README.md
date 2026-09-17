@@ -2,7 +2,7 @@
 
 **Power BI · SSAS Tabular · DAX · T-SQL · Microsoft Fabric**
 
-4+ years · ~80% refresh cut (30 to 6 min) · 7 countries · DP-600 Fabric certified · government, higher education, FMCG, energy
+4+ years · ~80% refresh cut (30 to 6 min) · 7 countries, delivered remotely · DP-600 Fabric certified · government, higher education, FMCG, energy
 
 ---
 
